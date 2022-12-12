@@ -1,2 +1,1 @@
-
-coding(C++)
+coding(c++)
