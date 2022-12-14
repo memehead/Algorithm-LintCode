@@ -43,7 +43,7 @@ vector<vector<int>> threeSum(vector<int> &numbers) {
     sort(numbers.begin(), numbers.end());
 
     vector<int> ans;
-    int L = 0; int R = numbers.size();
+    int R = numbers.size();
     for (int i = 0; i < R; i++) {
         if (i == 0 || numbers[i - 1] != numbers[i]) {
             ans.push_back(numbers[i]);
