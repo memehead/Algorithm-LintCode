@@ -11,6 +11,7 @@ public:
 		this->next = NULL;
 	}
 };
+
 ListNode* removeElements(ListNode* head, int val) {
 	if (head == NULL) {
 		return NULL;
