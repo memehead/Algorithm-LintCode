@@ -1,10 +1,8 @@
 #include<iostream>
 #include<vector>
-
 using namespace std;
 
 // https://www.lintcode.com/problem/38/description
-
 int searchMatrix__0038(vector<vector<int>>& matrix, int target) {
 	if (matrix.empty() || matrix[0].empty()) {
 		return 0;
