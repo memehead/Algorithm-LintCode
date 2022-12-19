@@ -1,10 +1,8 @@
 #include<iostream>
 #include<vector>
-
 using namespace std;
 
 // https://www.lintcode.com/problem/28/description
-
 int searchMatrix(vector<vector<int>>& matrix, int target) {
 	if (matrix.empty() || matrix[0].empty()) {
 		return 0;
@@ -52,7 +50,7 @@ bool binarySearch(vector<int>& array, int target) {
 }
 
 /// <summary>
-/// 方法2快
+/// 路陆路篓2驴矛
 /// </summary>
 /// <param name="matrix"></param>
 /// <param name="target"></param>
@@ -69,7 +67,7 @@ bool searchMatrix2(vector<vector<int>>& matrix, int target) {
 
 	while (x < N) {
 		if (matrix[x][M - 1] > target) {
-			// 二分
+			// 露镁路脰
 			return binarySearch(matrix[x], target);
 		}
 		else if (matrix[x][M - 1] < target) {
