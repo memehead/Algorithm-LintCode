@@ -37,7 +37,6 @@ Info* process0921(TreeNode* head) {
 	bool isSame = false;
 
 	if (leftInfo->isSame && rightInfo->isSame) {
-		// head ÊÇÒ¶½Úµã
 		if (head->left == NULL && head->right == NULL) {
 			isSame = true;
 			sameCounts = 1;
