@@ -2,11 +2,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
 
 // https://www.lintcode.com/problem/57/description
-
 void twoSum(vector<int>& numbers, int left, int right, int target, vector<int>& ans, vector<vector<int>>& res) {
     if (left >= right) {
         return;
@@ -33,7 +31,6 @@ void twoSum(vector<int>& numbers, int left, int right, int target, vector<int>& 
         }
     }
 }
-
 
 vector<vector<int>> threeSum(vector<int> &numbers) {
     vector<vector<int>> res;
