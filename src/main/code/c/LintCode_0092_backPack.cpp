@@ -1,10 +1,8 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 // https://www.lintcode.com/problem/92
-
 int process(vector<int>& array, int index, int rest) {
 	if (rest < 0) {
 		return -1;
@@ -23,7 +21,7 @@ int process(vector<int>& array, int index, int rest) {
 	return max(ans1, ans2);
 }
 
-// ±©Á¦µİ¹é
+// æš´åŠ›é€’å½’
 int backPack(int m, vector<int>& a) {
 	if (a.empty() || m <= 0) {
 		return 0;
@@ -33,8 +31,7 @@ int backPack(int m, vector<int>& a) {
 	return process(a, 0, m);
 }
 
-
-// ¶¯Ì¬¹æ»®£¨¿ÉÒÔ½øĞĞ¿Õ¼äÑ¹Ëõ£©
+// åŠ¨æ€è§„åˆ’ï¼ˆå¯ä»¥è¿›è¡Œç©ºé—´å‹ç¼©ï¼‰
 int backPack2(int m, vector<int>& a) {
 	if (a.empty() || m <= 0) {
 		return 0;
