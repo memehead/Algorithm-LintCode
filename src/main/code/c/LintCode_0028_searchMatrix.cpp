@@ -49,12 +49,6 @@ bool binarySearch(vector<int>& array, int target) {
 	return false;
 }
 
-/// <summary>
-/// ·½·¨2¿ì
-/// </summary>
-/// <param name="matrix"></param>
-/// <param name="target"></param>
-/// <returns></returns>
 bool searchMatrix2(vector<vector<int>>& matrix, int target) {
 	if (matrix.empty() || matrix[0].empty()) {
 		return 0;
@@ -67,7 +61,6 @@ bool searchMatrix2(vector<vector<int>>& matrix, int target) {
 
 	while (x < N) {
 		if (matrix[x][M - 1] > target) {
-			// ¶þ·Ö
 			return binarySearch(matrix[x], target);
 		}
 		else if (matrix[x][M - 1] < target) {
