@@ -3,7 +3,6 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/41/description
-
 int maxSubArray(vector<int>& nums) {
 	if (nums.empty()) {
 		return INT_MIN;
