@@ -3,7 +3,6 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/15/description
-
 void swap(vector<int>& nums, int i, int j) {
 	int temp = nums[i];
 	nums[i] = nums[j];
