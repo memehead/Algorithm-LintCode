@@ -1,1 +1,2 @@
-### coding(C++)
+### LintCode
+coding(C++)
