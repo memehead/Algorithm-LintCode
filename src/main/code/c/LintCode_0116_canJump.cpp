@@ -3,13 +3,11 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/116
-
 bool canJump(vector<int>& a) {
 	if (a.empty()) {
 		return false;
 	}
 	
-	//±ﬂΩÁ¥¶¿Ì
 	if (a.at(0) == 0) {
 		return a.size() == 1;
 	}
