@@ -24,7 +24,6 @@ vector<int> singleNumberIII(vector<int>& a) {
 
 	int partNum = 0;
 	for (int i = 0; i < a.size(); i++) {
-		// 要与0比较，不是1
 		if ((a[i] & flag) == 0) {
 			partNum ^= a[i];
 		}
