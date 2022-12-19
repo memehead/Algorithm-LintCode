@@ -1,11 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <stack>
-
 using namespace std;
 
 // https://www.lintcode.com/problem/66/description
-
 class TreeNode {
 public:
 	int val;
