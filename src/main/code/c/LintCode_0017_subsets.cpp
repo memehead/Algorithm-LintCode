@@ -4,7 +4,6 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/17/description
-
 void process(vector<int>& nums, int index, vector<int>& temp, vector<vector<int>>& res) {
 	if (index == nums.size()) {
 		res.push_back(temp);
