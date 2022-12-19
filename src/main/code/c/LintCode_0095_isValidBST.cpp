@@ -1,9 +1,7 @@
 #include <iostream>
-
 using namespace std;
 
 // https://www.lintcode.com/problem/95
-
 class TreeNode {
 public:
 	int val;
@@ -28,13 +26,13 @@ public:
 	}
 };
 
-Info* process0095(TreeNode* head) {
+Info* process(TreeNode* head) {
 	if (head == NULL) {
 		return NULL;
 	}
 
-	Info* leftInfo = process0095(head->left);
-	Info* rightInfo = process0095(head->right);
+	Info* leftInfo = process(head->left);
+	Info* rightInfo = process(head->right);
 
 	int maxValue = head->val;
 	int minValue = head->val;
@@ -68,11 +66,10 @@ Info* process0095(TreeNode* head) {
 	return new Info(maxValue, minValue, isBST);
 }
 
-
 bool isValidBST(TreeNode* root) {
 	if (root == NULL) {
 		return true;
 	}
 
-	return process0095(root)->isBST;
+	return process(root)->isBST;
 }
