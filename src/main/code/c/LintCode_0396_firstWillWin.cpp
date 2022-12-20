@@ -26,11 +26,3 @@ bool firstWillWin(vector<int>& values) {
 
     return firstDp[0][N - 1] >= secondDp[0][N - 1];
 }
-
-//int main() {
-//    vector<int> array = { 3, 2, 2 };
-//    bool res = firstWillWin(array);
-//    cout << res << endl;
-//
-//    return 0;
-//}
