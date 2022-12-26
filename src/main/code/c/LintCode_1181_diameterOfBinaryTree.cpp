@@ -25,13 +25,13 @@ public:
 	}
 };
 
-Info* process1181(TreeNode* head) {
+Info* process(TreeNode* head) {
 	if (head == NULL) {
 		return new Info(0, 0);
 	}
 
-	Info* leftInfo = process1181(head->left);
-	Info* rightInfo = process1181(head->right);
+	Info* leftInfo = process(head->left);
+	Info* rightInfo = process(head->right);
 
 	int height = max(leftInfo->height, rightInfo->height) + 1;
 	int distance = max(max(leftInfo->distance, rightInfo->distance), leftInfo->height + rightInfo->height + 1);
@@ -45,5 +45,5 @@ int diameterOfBinaryTree(TreeNode* root) {
 		return 0;
 	}
 
-	return process1181(root)->distance;
+	return process(root)->distance;
 }
