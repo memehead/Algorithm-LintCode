@@ -3,7 +3,6 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/726
-
 class TreeNode {
 public:
 	int val;
@@ -26,12 +25,12 @@ public:
 	}
 };
 
-Info* process0726(TreeNode* head) {
+Info* process(TreeNode* head) {
 	if (head == NULL) {
 		return new Info(0, 0);
 	}
-	Info* leftInfo = process0726(head->left);
-	Info* rightInfo = process0726(head->right);
+	Info* leftInfo = process(head->left);
+	Info* rightInfo = process(head->right);
 
 	int height = max(leftInfo->height, rightInfo->height) + 1;
 	int nodeNums = leftInfo->nodeNums + rightInfo->nodeNums + 1;
@@ -40,17 +39,17 @@ Info* process0726(TreeNode* head) {
 }
 
 
-// ¹úÄÚµÄÂú¶ş²æÊ÷ºÍ¹úÍâµÄÂú¶ş²æÊ÷µÄ¶¨Òå»¹²»Ò»Ñù
+// å›½å†…çš„æ»¡äºŒå‰æ ‘å’Œå›½å¤–çš„æ»¡äºŒå‰æ ‘çš„å®šä¹‰è¿˜ä¸ä¸€æ ·
 bool isFullTree(TreeNode* root) {
 	if (root == NULL) {
 		return true;
 	}
 
-	Info* res = process0726(root);
+	Info* res = process(root);
 	return ((1 << res->height) - 1) == res->nodeNums;
 }
 
-// ¹úÍâµÄÂú¶ş²æÊ÷
+// å›½å¤–çš„æ»¡äºŒå‰æ ‘
 bool isFullTree2(TreeNode* root) {
 	if (root == NULL) {
 		return true;
