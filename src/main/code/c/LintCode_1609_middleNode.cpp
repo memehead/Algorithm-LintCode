@@ -2,7 +2,6 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/1609
-
 class ListNode {
 public:
 	int val;
