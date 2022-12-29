@@ -2,7 +2,6 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/1870
-
 int stringCount(string& str) {
 	if (str.empty()) {
 		return 0;
