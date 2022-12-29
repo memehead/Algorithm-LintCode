@@ -24,7 +24,7 @@ int stringCount(string& str) {
 			R++;
 		}
 
-		count += (R - L)* (R - L + 1) / 2;
+		count += (R - L) * (R - L + 1) / 2;
 		L = R;
 	}
 
