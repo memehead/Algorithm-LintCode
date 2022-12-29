@@ -3,7 +3,6 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/1756
-
 int buyBeverage(int budget, int cost, int exchange) {
 	if (budget < cost || exchange == 1) {
 		return 0;
