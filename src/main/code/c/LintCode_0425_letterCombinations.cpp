@@ -3,7 +3,6 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/425/description
-
 const vector<vector<string>> dict = {
     {"a", "b", "c"}, {"d", "e", "f"},
     {"g", "h", "i"}, {"j", "k", "l"},
