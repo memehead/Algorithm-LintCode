@@ -1,6 +1,6 @@
 package LintCode;
 
-// https://www.lintcode.com/problem/125/
+// https://www.lintcode.com/problem/141/
 public class LintCode_0141_sqrt {
     public int sqrt(int x) {
         if (x == 0) {
