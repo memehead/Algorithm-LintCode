@@ -1,1 +1,1 @@
-### coding(Java)
+### LintCode(Java)
