@@ -4,7 +4,6 @@
 using namespace std;
 
 // https://www.lintcode.com/problem/939
-
 class TreeNode {
 public:
 	int val;
